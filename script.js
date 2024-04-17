@@ -9,4 +9,16 @@ searchInput.addEventListener('keyup', function(event) {
 }})
 
 searchBtn.addEventListener('click', () => {
-    const word = searchInput.value.trim();
+    const word = searchInput.value.trim();}
+
+    if (word) {
+        fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.title === 'No definition found') {
+                    resultDiv.innerHTML = `<p>${word} not found.</p>`;
+                } else {
+                    const meanings = data[0].meanings.map(meaning => meaning.definitions[0].definition).join('<br>');
+                    resultDiv.innerHTML = `<p><strong>${word}:</strong> ${meanings}</p>`;
+                }
+            })}
