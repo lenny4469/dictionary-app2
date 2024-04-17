@@ -29,3 +29,14 @@ searchBtn.addEventListener('click', () => {
 
         searchInput.value = '';
     }
+
+    speakBtn.addEventListener('click', () => {
+        const word = searchInput.value.trim();
+        const meaning = resultDiv.textContent.trim();
+    
+        if (word || meaning) {
+            const utterance = new SpeechSynthesisUtterance(`${word}: ${meaning}`);
+            speechSynthesis.speak(utterance);
+        }
+    });
+    
