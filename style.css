@@ -24,3 +24,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.container {
+    background-image: url("https://bit.ly/3VOMwuD");
+    background-color: #74c0ef;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+}
