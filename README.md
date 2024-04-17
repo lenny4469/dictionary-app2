@@ -23,7 +23,7 @@ Clone the repository to your local machine:
 
 bash
 Copy code
-git clone git@github.com:lenny4469/dictionary-app.git
+git clone https://github.com/lenny4469/dictionary-app2.git
 Open the index.html file in your web browser.
 
 Credits
