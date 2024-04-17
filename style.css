@@ -33,3 +33,33 @@ body {
     padding: 30px;
     width: 400px;
 }
+
+
+#comment-section {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#comment-input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#submit-comment {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-comment:hover {
+    background-color: #45a049;
+}
