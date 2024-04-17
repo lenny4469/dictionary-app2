@@ -7,3 +7,6 @@ searchInput.addEventListener('keyup', function(event) {
         event.preventDefault();
         searchBtn.click();
 }})
+
+searchBtn.addEventListener('click', () => {
+    const word = searchInput.value.trim();
