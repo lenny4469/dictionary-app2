@@ -40,3 +40,15 @@ searchBtn.addEventListener('click', () => {
         }
     });
     
+    if (commentInput !== '') {
+        const commentElement = document.createElement('div');
+        commentElement.classList.add('comment');
+        commentElement.textContent = commentInput;
+        
+        const commentsContainer = document.getElementById('comments-container');
+        commentsContainer.appendChild(commentElement);
+        
+        document.getElementById('comment-input').value = '';
+    } else {
+        alert('Please enter a comment before submitting.');
+    }
