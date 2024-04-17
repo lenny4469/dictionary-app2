@@ -63,3 +63,23 @@ body {
 #submit-comment:hover {
     background-color: #45a049;
 }
+
+#search-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+#search-btn {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
