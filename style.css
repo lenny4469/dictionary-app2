@@ -8,3 +8,19 @@ h1{
    top:0;
    left: 0;
 }
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f3fa;
+    background-image: url("https://thumbs.dreamstime.com/b/dictionary-dictionary-study-translate-bilingual-english-background-book-117950458.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
