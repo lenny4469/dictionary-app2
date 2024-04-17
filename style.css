@@ -83,3 +83,15 @@ body {
     padding: 10px;
     width: 100%;
 }
+
+#speak-btn{
+    background-color: #384ca5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 40%;
+}
