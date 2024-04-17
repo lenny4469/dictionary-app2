@@ -9,7 +9,7 @@ searchInput.addEventListener('keyup', function(event) {
 }})
 
 searchBtn.addEventListener('click', () => {
-    const word = searchInput.value.trim();}
+    const word = searchInput.value.trim();})
 
     if (word) {
         fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
@@ -21,4 +21,11 @@ searchBtn.addEventListener('click', () => {
                     const meanings = data[0].meanings.map(meaning => meaning.definitions[0].definition).join('<br>');
                     resultDiv.innerHTML = `<p><strong>${word}:</strong> ${meanings}</p>`;
                 }
-            })}
+            })
+            .catch(error => {
+                console.error(error);
+                resultDiv.innerHTML = `<p>Error fetching data.</p>`;
+            });
+
+        searchInput.value = '';
+    }
